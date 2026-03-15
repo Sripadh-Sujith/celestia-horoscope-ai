@@ -1,8 +1,8 @@
 import streamlit as st
 from groq import Groq
-
+import os
 # Groq client
-client = Groq(api_key="GROQ_API_KEY")
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 st.set_page_config(page_title="Celestia", page_icon="🔮")
 
